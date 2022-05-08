@@ -189,13 +189,13 @@
 		57A9AEF628268D6200D02E8F /* CryptoWallet */ = {
 			isa = PBXGroup;
 			children = (
+				57A9AEF728268D6200D02E8F /* CryptoWalletApp.swift */,
+				57A9AEF928268D6200D02E8F /* ContentView.swift */,
 				5739C4CE2826CE29009895C0 /* Resources */,
 				5739C4B3282692BC009895C0 /* Core */,
 				5739C4B928269785009895C0 /* Extensions */,
 				5739C4B228269299009895C0 /* Views */,
-				57A9AEF728268D6200D02E8F /* CryptoWalletApp.swift */,
 				5739C4CC2826CE06009895C0 /* ModelData.swift */,
-				57A9AEF928268D6200D02E8F /* ContentView.swift */,
 				57A9AEFB28268D6400D02E8F /* Assets.xcassets */,
 				57A9AEFD28268D6400D02E8F /* Preview Content */,
 			);

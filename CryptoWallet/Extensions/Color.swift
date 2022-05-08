@@ -21,5 +21,7 @@ struct ColorTheme {
   let latinCharm = Color("Latin Charm")
   let greenMana = Color("Green Mana")
   let white = Color("White")
+  let strawberryDreams = Color("Strawberry Dreams")
+  let watermelonJuice = Color("Watermelon Juice")
   
 }

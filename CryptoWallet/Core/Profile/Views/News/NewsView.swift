@@ -25,8 +25,13 @@ struct NewsView: View {
         .font(.system(size: 20, weight: .semibold))
         .foregroundColor(Color.theme.white)
       Spacer()
-      Button("Show all") {
+      Button {
         print(#function)
+      } label: {
+        Text("Show all")
+          .font(.system(size: 16, weight: .semibold))
+          .gradientForeground(colors: [Color.theme.strawberryDreams,
+                                       Color.theme.watermelonJuice])
       }
     }
     .padding(20)
@@ -52,4 +57,16 @@ struct NewsView_Previews: PreviewProvider {
       .previewLayout(.sizeThatFits)
       .background(Color.theme.corbeau)
   }
+}
+
+extension View {
+    public func gradientForeground(colors: [Color]) -> some View {
+        self.overlay(
+            LinearGradient(
+                colors: colors,
+                startPoint: .topLeading,
+                endPoint: .bottomTrailing)
+        )
+            .mask(self)
+    }
 }

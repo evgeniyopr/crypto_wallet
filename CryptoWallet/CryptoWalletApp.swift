@@ -14,7 +14,7 @@ struct CryptoWalletApp: App {
   
   var body: some Scene {
     WindowGroup {
-      ProfileView()
+      ContentView()
         .environmentObject(viewModel)
     }
   }
