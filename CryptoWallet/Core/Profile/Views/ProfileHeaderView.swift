@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ProfileHeaderView: View {
   
-  @EnvironmentObject var viewModel: ProfileViewModel
+  @EnvironmentObject var viewModel: ModelData
 
   var body: some View {
     VStack{
@@ -65,7 +65,7 @@ struct ProfileHeaderView: View {
 struct ProfileHeaderView_Previews: PreviewProvider {
   static var previews: some View {
     ProfileHeaderView()
-      .environmentObject(ProfileViewModel())
+      .environmentObject(ModelData())
       .previewLayout(.sizeThatFits)
       .background(Color.theme.corbeau)
   }

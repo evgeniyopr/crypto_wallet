@@ -7,10 +7,10 @@
 
 import Foundation
 
-final class ProfileViewModel: ObservableObject {
-    
-  @Published var profile: Profile = load("profile.json")
-  @Published var market: CryptoMarket = load("market.json")
-  @Published var news: [News] = load("news.json")
-  
-}
+//final class ProfileViewModel: ObservableObject {
+//    
+//  @Published var profile: Profile = load("profile.json")
+//  @Published var market: CryptoMarket = load("market.json")
+//  @Published var news: [News] = load("news.json")
+//  
+//}

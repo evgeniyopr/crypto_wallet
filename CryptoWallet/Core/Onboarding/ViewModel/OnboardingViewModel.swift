@@ -28,9 +28,9 @@ final class OnboardingViewModel: ObservableObject {
       case .first:
         return "Easiness"
       case .second:
-        return "Easiness"
+        return "Security"
       case .third:
-        return "Easiness"
+        return "Transormation"
       }
     }
     
@@ -39,14 +39,24 @@ final class OnboardingViewModel: ObservableObject {
       case .first:
         return "Supplying the convenient \n transactions chains"
       case .second:
-        return "Supplying the convenient \n transactions chains"
+        return "Providing crypto audience with \n high-tech security solutions"
       case .third:
-        return "Supplying the convenient \n transactions chains"
+        return "Diversifying crypto investment \n experience worldwide"
       }
     }
   }
   
+  // MARK: - Private properties
+  private let onboardingRepositoryService: OnboardingRepositoryService
   @Published private(set) var currentStep: Step = .first
+  
+  // MARK: - Init
+  
+  init(onboardingRepositoryService: OnboardingRepositoryService) {
+    self.onboardingRepositoryService = onboardingRepositoryService
+  }
+  
+  // MARK: - Public methods
   
   func didSelectContinue() {
     switch currentStep {
@@ -55,7 +65,14 @@ final class OnboardingViewModel: ObservableObject {
     case .second:
       currentStep = .third
     case .third:
-      currentStep = .first
+      saveOnboardingShown()
     }
   }
+  
+  // MARK: - Private methods
+  
+  private func saveOnboardingShown() {
+    onboardingRepositoryService.saveOnboardingShown()
+  }
+  
 }

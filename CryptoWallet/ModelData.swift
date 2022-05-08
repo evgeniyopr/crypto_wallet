@@ -7,12 +7,22 @@
 
 import SwiftUI
 
-//final class ModelData: ObservableObject {
-//  
-//  @Published var market: [Market] = load("market.json")
-//  @Published var profile: Profile = load("profile.json")
-//  
-//}
+final class ModelData: ObservableObject {
+  
+  // MARK: - Public properties
+  
+//  var onboardingShownBefore: Bool
+  
+  @Published var profile: Profile = load("profile.json")
+  @Published var market: CryptoMarket = load("market.json")
+  @Published var news: [News] = load("news.json")
+  
+  // MARK: - Private properties
+  
+  
+  
+  
+}
 
 struct Profile: Decodable {
   

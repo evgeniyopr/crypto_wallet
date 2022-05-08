@@ -40,7 +40,7 @@ struct NewsRow: View {
 
 struct NewsRow_Previews: PreviewProvider {
   
-  static var news = ProfileViewModel().news
+  static var news = ModelData().news
   
     static var previews: some View {
       Group {

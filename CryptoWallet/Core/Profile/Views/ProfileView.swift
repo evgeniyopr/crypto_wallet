@@ -9,14 +9,14 @@ import SwiftUI
 
 struct ProfileView: View {
   
-  @EnvironmentObject var viewModel: ProfileViewModel
+  @EnvironmentObject var modelData: ModelData
   
   var body: some View {
     ScrollView(showsIndicators: false) {
       VStack {
         ProfileHeaderView()
-        TrendingView(coins: viewModel.market.coins)
-        NewsView(news: viewModel.news)
+        TrendingView(coins: modelData.market.coins)
+        NewsView(news: modelData.news)
           .frame(height: 260)
       }
     }
@@ -29,6 +29,7 @@ struct ProfileView: View {
 struct ProfileView_Previews: PreviewProvider {
   static var previews: some View {
     ProfileView()
-      .environmentObject(ProfileViewModel())
+      .background(Color.theme.corbeau)
+      .environmentObject(ModelData())
   }
 }

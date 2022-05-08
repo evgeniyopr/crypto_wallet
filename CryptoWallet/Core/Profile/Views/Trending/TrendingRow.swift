@@ -62,7 +62,7 @@ struct TrendingRow: View {
 
 struct TrendingRow_Previews: PreviewProvider {
   
-  static var coins = ProfileViewModel().market.coins
+  static var coins = ModelData().market.coins
   
   static var previews: some View {
     Group {

@@ -10,12 +10,19 @@ import SwiftUI
 @main
 struct CryptoWalletApp: App {
   
-  @StateObject var viewModel = ProfileViewModel()
+  @StateObject var onboardingRepositoryService = OnboardingRepositoryService()
+  
+  @StateObject var modelData = ModelData()
   
   var body: some Scene {
     WindowGroup {
-      ContentView()
-        .environmentObject(viewModel)
+      if onboardingRepositoryService.onboardingShownBefore {
+        ContentView()
+          .environmentObject(modelData)
+      } else {
+        OnboardingView()
+          .environmentObject(OnboardingViewModel(onboardingRepositoryService: onboardingRepositoryService))
+      }
     }
   }
 }

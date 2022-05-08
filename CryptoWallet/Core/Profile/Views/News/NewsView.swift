@@ -50,7 +50,7 @@ struct NewsView: View {
 
 struct NewsView_Previews: PreviewProvider {
   
-  static var news = ProfileViewModel().news
+  static var news = ModelData().news
   
   static var previews: some View {
     NewsView(news: news)
