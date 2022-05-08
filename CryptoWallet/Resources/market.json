@@ -1,0 +1,38 @@
+{
+  "trending": ["bitcoin", "cardano"],
+  "coins" :
+  [
+    {
+      "id": "bitcoin",
+      "symbol": "btc",
+      "name": "Bitcoin",
+      "price": "352,20",
+      "percentage": "-0.27",
+      "image": "https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579",
+    },
+    {
+      "id": "cardano",
+      "symbol": "ada",
+      "name": "Cardano",
+      "price": "$2,836,137.20",
+      "percentage": "4.11%",
+      "image": "https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579",
+    },
+    {
+      "id": "etherium",
+      "symbol": "ETH",
+      "name": "Etherium",
+      "price": "$2678.95",
+      "percentage": "4.95",
+      "image": "https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579",
+    },
+    {
+      "id": "etherium2",
+      "symbol": "ETH2",
+      "name": "Etherium 2",
+      "price": "$2,383.65",
+      "percentage": "4.91",
+      "image": "https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579",
+    }
+  ]
+}

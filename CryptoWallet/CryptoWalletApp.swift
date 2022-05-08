@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct CryptoWalletApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+  
+  @StateObject var viewModel = ProfileViewModel()
+  
+  var body: some Scene {
+    WindowGroup {
+      ProfileView()
+        .environmentObject(viewModel)
     }
+  }
 }

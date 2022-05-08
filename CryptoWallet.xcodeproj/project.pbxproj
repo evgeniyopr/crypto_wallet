@@ -10,6 +10,17 @@
 		5739C4B8282692EF009895C0 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5739C4B7282692EF009895C0 /* OnboardingView.swift */; };
 		5739C4BB28269795009895C0 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5739C4BA28269795009895C0 /* Color.swift */; };
 		5739C4BD2826A1ED009895C0 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5739C4BC2826A1ED009895C0 /* OnboardingViewModel.swift */; };
+		5739C4C02826C0D2009895C0 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5739C4BF2826C0D2009895C0 /* ProfileView.swift */; };
+		5739C4C32826C113009895C0 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5739C4C22826C113009895C0 /* ProfileHeaderView.swift */; };
+		5739C4C52826C31B009895C0 /* TrendingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5739C4C42826C31B009895C0 /* TrendingView.swift */; };
+		5739C4C72826C479009895C0 /* TrendingRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5739C4C62826C479009895C0 /* TrendingRow.swift */; };
+		5739C4CB2826CCDC009895C0 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5739C4CA2826CCDC009895C0 /* NewsView.swift */; };
+		5739C4CD2826CE06009895C0 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5739C4CC2826CE06009895C0 /* ModelData.swift */; };
+		5739C4D22826CF7B009895C0 /* market.json in Resources */ = {isa = PBXBuildFile; fileRef = 5739C4D12826CF7B009895C0 /* market.json */; };
+		5739C4D62826D70C009895C0 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5739C4D52826D70C009895C0 /* ProfileViewModel.swift */; };
+		5739C4D82826DBE2009895C0 /* profile.json in Resources */ = {isa = PBXBuildFile; fileRef = 5739C4D72826D8F2009895C0 /* profile.json */; };
+		5739C4D92826DE27009895C0 /* news.json in Resources */ = {isa = PBXBuildFile; fileRef = 5739C4D32826D175009895C0 /* news.json */; };
+		5739C4DB2826E93F009895C0 /* NewsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5739C4DA2826E93F009895C0 /* NewsRow.swift */; };
 		57A9AEF828268D6200D02E8F /* CryptoWalletApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A9AEF728268D6200D02E8F /* CryptoWalletApp.swift */; };
 		57A9AEFA28268D6200D02E8F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A9AEF928268D6200D02E8F /* ContentView.swift */; };
 		57A9AEFC28268D6400D02E8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57A9AEFB28268D6400D02E8F /* Assets.xcassets */; };
@@ -20,6 +31,17 @@
 		5739C4B7282692EF009895C0 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		5739C4BA28269795009895C0 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		5739C4BC2826A1ED009895C0 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		5739C4BF2826C0D2009895C0 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		5739C4C22826C113009895C0 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		5739C4C42826C31B009895C0 /* TrendingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingView.swift; sourceTree = "<group>"; };
+		5739C4C62826C479009895C0 /* TrendingRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRow.swift; sourceTree = "<group>"; };
+		5739C4CA2826CCDC009895C0 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		5739C4CC2826CE06009895C0 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		5739C4D12826CF7B009895C0 /* market.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = market.json; sourceTree = "<group>"; };
+		5739C4D32826D175009895C0 /* news.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = news.json; sourceTree = "<group>"; };
+		5739C4D52826D70C009895C0 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		5739C4D72826D8F2009895C0 /* profile.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = profile.json; sourceTree = "<group>"; };
+		5739C4DA2826E93F009895C0 /* NewsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRow.swift; sourceTree = "<group>"; };
 		57A9AEF428268D6200D02E8F /* Crypto Wallet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Crypto Wallet.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57A9AEF728268D6200D02E8F /* CryptoWalletApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWalletApp.swift; sourceTree = "<group>"; };
 		57A9AEF928268D6200D02E8F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				5739C4B4282692C2009895C0 /* Onboarding */,
+				5739C4BE2826C0C3009895C0 /* Profile */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -86,6 +109,62 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		5739C4BE2826C0C3009895C0 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				5739C4D42826D6F5009895C0 /* ViewModel */,
+				5739C4C12826C0E3009895C0 /* Views */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		5739C4C12826C0E3009895C0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5739C4BF2826C0D2009895C0 /* ProfileView.swift */,
+				5739C4C22826C113009895C0 /* ProfileHeaderView.swift */,
+				5739C4C82826CCB6009895C0 /* Trending */,
+				5739C4C92826CCC9009895C0 /* News */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		5739C4C82826CCB6009895C0 /* Trending */ = {
+			isa = PBXGroup;
+			children = (
+				5739C4C42826C31B009895C0 /* TrendingView.swift */,
+				5739C4C62826C479009895C0 /* TrendingRow.swift */,
+			);
+			path = Trending;
+			sourceTree = "<group>";
+		};
+		5739C4C92826CCC9009895C0 /* News */ = {
+			isa = PBXGroup;
+			children = (
+				5739C4CA2826CCDC009895C0 /* NewsView.swift */,
+				5739C4DA2826E93F009895C0 /* NewsRow.swift */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		5739C4CE2826CE29009895C0 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5739C4D32826D175009895C0 /* news.json */,
+				5739C4D72826D8F2009895C0 /* profile.json */,
+				5739C4D12826CF7B009895C0 /* market.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5739C4D42826D6F5009895C0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5739C4D52826D70C009895C0 /* ProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		57A9AEEB28268D6200D02E8F = {
 			isa = PBXGroup;
 			children = (
@@ -105,10 +184,12 @@
 		57A9AEF628268D6200D02E8F /* CryptoWallet */ = {
 			isa = PBXGroup;
 			children = (
+				5739C4CE2826CE29009895C0 /* Resources */,
 				5739C4B3282692BC009895C0 /* Core */,
 				5739C4B928269785009895C0 /* Extensions */,
 				5739C4B228269299009895C0 /* Views */,
 				57A9AEF728268D6200D02E8F /* CryptoWalletApp.swift */,
+				5739C4CC2826CE06009895C0 /* ModelData.swift */,
 				57A9AEF928268D6200D02E8F /* ContentView.swift */,
 				57A9AEFB28268D6400D02E8F /* Assets.xcassets */,
 				57A9AEFD28268D6400D02E8F /* Preview Content */,
@@ -183,7 +264,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				57A9AEFF28268D6400D02E8F /* Preview Assets.xcassets in Resources */,
+				5739C4D92826DE27009895C0 /* news.json in Resources */,
+				5739C4D82826DBE2009895C0 /* profile.json in Resources */,
 				57A9AEFC28268D6400D02E8F /* Assets.xcassets in Resources */,
+				5739C4D22826CF7B009895C0 /* market.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,8 +281,16 @@
 				5739C4BD2826A1ED009895C0 /* OnboardingViewModel.swift in Sources */,
 				5739C4B8282692EF009895C0 /* OnboardingView.swift in Sources */,
 				5739C4BB28269795009895C0 /* Color.swift in Sources */,
+				5739C4CB2826CCDC009895C0 /* NewsView.swift in Sources */,
+				5739C4DB2826E93F009895C0 /* NewsRow.swift in Sources */,
 				57A9AEFA28268D6200D02E8F /* ContentView.swift in Sources */,
+				5739C4C32826C113009895C0 /* ProfileHeaderView.swift in Sources */,
+				5739C4D62826D70C009895C0 /* ProfileViewModel.swift in Sources */,
+				5739C4C02826C0D2009895C0 /* ProfileView.swift in Sources */,
+				5739C4CD2826CE06009895C0 /* ModelData.swift in Sources */,
 				57A9AEF828268D6200D02E8F /* CryptoWalletApp.swift in Sources */,
+				5739C4C72826C479009895C0 /* TrendingRow.swift in Sources */,
+				5739C4C52826C31B009895C0 /* TrendingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
