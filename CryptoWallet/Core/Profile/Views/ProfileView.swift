@@ -17,7 +17,7 @@ struct ProfileView: View {
         ProfileHeaderView()
         TrendingView(coins: modelData.market.coins)
         NewsView(news: modelData.news)
-          .frame(height: 260)
+          .frame(height: 300)
       }
     }
     .padding(.top, 30)

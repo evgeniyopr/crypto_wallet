@@ -11,7 +11,6 @@ import SwiftUI
 struct CryptoWalletApp: App {
   
   @StateObject var onboardingRepositoryService = OnboardingRepositoryService()
-  
   @StateObject var modelData = ModelData()
   
   var body: some Scene {

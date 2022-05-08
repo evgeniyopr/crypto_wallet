@@ -9,8 +9,8 @@ import SwiftUI
 
 struct ProfileHeaderView: View {
   
-  @EnvironmentObject var viewModel: ModelData
-
+  @EnvironmentObject var modelData: ModelData
+  
   var body: some View {
     VStack{
       header
@@ -25,15 +25,15 @@ struct ProfileHeaderView: View {
         Text("Welcome back,")
           .font(.system(size: 16, weight: .semibold))
           .foregroundColor(Color.theme.heatherGrey)
-        Text(viewModel.profile.name + "👋")
+        Text(modelData.profile.name + " 👋")
           .font(.system(size: 24, weight: .semibold))
           .foregroundColor(Color.theme.white)
       }
       Spacer()
-      //      Image("close")
-      Rectangle()
-        .fill(.red)
+      modelData.avatar
+        .resizable()
         .frame(width: 60, height: 60)
+        .cornerRadius(30)
     }
     .padding(16)
   }
@@ -41,24 +41,30 @@ struct ProfileHeaderView: View {
   private var balance: some View {
     ZStack {
       Circle()
-        .fill(.red)
+        .fill(Color.theme.latinCharm).opacity(0.5)
         .frame(width: 180, height: 180)
-      Text(viewModel.profile.balance)
+      Circle()
+        .fill(Color.theme.latinCharm).opacity(0.5)
+        .frame(width: 180, height: 180)
+        .radianGradientForeground(colors: [Color.theme.strawberryDreams, .clear],
+                                  center: .center,
+                                  startRadius: 0,
+                                  endRadius: 100)
+      Text(modelData.profile.balance)
         .font(.system(size: 20, weight: .semibold))
         .foregroundColor(.white)
     }
   }
   
   private var buttons: some View {
-    HStack {
-      Button("424") {
-        print("")
-      }
-      Button("424") {
-        print("")
-      }
+    HStack(spacing: 10) {
+      CustomButtonWithBorder(title: "Deposit")
+      CustomButtonWithBorder(title: "Withdraw")
     }
-    .padding()
+    .padding(.top, 32)
+    .padding(.trailing, 20)
+    .padding(.leading, 20)
+    .padding(.bottom, 47)
   }
 }
 

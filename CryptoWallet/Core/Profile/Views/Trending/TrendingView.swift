@@ -31,16 +31,18 @@ struct TrendingView: View {
   
   private var collection: some View {
     ScrollView(.horizontal, showsIndicators: false) {
-      HStack {
+      HStack(spacing: 17) {
         ForEach(coins) { coin in
           TrendingRow(coin: coin)
         }
       }
+      .padding(.leading, 20)
+      .padding(.trailing, 20)
     }
   }
 }
 
-struct TrandingView_Previews: PreviewProvider {
+struct TrendingView_Previews: PreviewProvider {
   
   static var coins = ModelData().market.coins
   

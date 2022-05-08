@@ -30,11 +30,17 @@ struct NewsView: View {
       } label: {
         Text("Show all")
           .font(.system(size: 16, weight: .semibold))
-          .gradientForeground(colors: [Color.theme.strawberryDreams,
-                                       Color.theme.watermelonJuice])
+          .linearGradientForeground(colors: [Color.theme.strawberryDreams,
+                                             Color.theme.watermelonJuice],
+                                    startPoint: .leading,
+                                    endPoint: .trailing)
       }
     }
-    .padding(20)
+//    .padding(20)
+    .padding(.leading, 20)
+    .padding(.trailing, 20)
+    .padding(.top, 43)
+    .padding(.bottom, 26)
   }
   
   private var list: some View {
@@ -60,13 +66,23 @@ struct NewsView_Previews: PreviewProvider {
 }
 
 extension View {
-    public func gradientForeground(colors: [Color]) -> some View {
-        self.overlay(
-            LinearGradient(
-                colors: colors,
-                startPoint: .topLeading,
-                endPoint: .bottomTrailing)
-        )
-            .mask(self)
-    }
+  public func linearGradientForeground(colors: [Color], startPoint: UnitPoint, endPoint: UnitPoint) -> some View {
+    self.overlay(
+      LinearGradient(
+        colors: colors,
+        startPoint: startPoint,
+        endPoint: endPoint)
+    )
+    .mask(self)
+  }
+  
+  public func radianGradientForeground(colors: [Color], center: UnitPoint, startRadius: CGFloat, endRadius: CGFloat) -> some View {
+    self.overlay(
+      RadialGradient(colors: colors,
+                     center: center,
+                     startRadius: startRadius,
+                     endRadius: endRadius)
+    )
+    .mask(self)
+  }
 }
