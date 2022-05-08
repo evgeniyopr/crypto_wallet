@@ -25,6 +25,8 @@
 		57A9AEFA28268D6200D02E8F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A9AEF928268D6200D02E8F /* ContentView.swift */; };
 		57A9AEFC28268D6400D02E8F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57A9AEFB28268D6400D02E8F /* Assets.xcassets */; };
 		57A9AEFF28268D6400D02E8F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57A9AEFE28268D6400D02E8F /* Preview Assets.xcassets */; };
+		57C421C328278BCB0013117E /* MarketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C421C228278BCB0013117E /* MarketView.swift */; };
+		57C421C528278BD40013117E /* MarketRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C421C428278BD40013117E /* MarketRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		57A9AEF928268D6200D02E8F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		57A9AEFB28268D6400D02E8F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57A9AEFE28268D6400D02E8F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		57C421C228278BCB0013117E /* MarketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketView.swift; sourceTree = "<group>"; };
+		57C421C428278BD40013117E /* MarketRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,7 @@
 			children = (
 				5739C4B4282692C2009895C0 /* Onboarding */,
 				5739C4BE2826C0C3009895C0 /* Profile */,
+				57C421C128278BB70013117E /* Market */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -205,6 +210,15 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		57C421C128278BB70013117E /* Market */ = {
+			isa = PBXGroup;
+			children = (
+				57C421C228278BCB0013117E /* MarketView.swift */,
+				57C421C428278BD40013117E /* MarketRow.swift */,
+			);
+			path = Market;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -284,9 +298,11 @@
 				5739C4CB2826CCDC009895C0 /* NewsView.swift in Sources */,
 				5739C4DB2826E93F009895C0 /* NewsRow.swift in Sources */,
 				57A9AEFA28268D6200D02E8F /* ContentView.swift in Sources */,
+				57C421C328278BCB0013117E /* MarketView.swift in Sources */,
 				5739C4C32826C113009895C0 /* ProfileHeaderView.swift in Sources */,
 				5739C4D62826D70C009895C0 /* ProfileViewModel.swift in Sources */,
 				5739C4C02826C0D2009895C0 /* ProfileView.swift in Sources */,
+				57C421C528278BD40013117E /* MarketRow.swift in Sources */,
 				5739C4CD2826CE06009895C0 /* ModelData.swift in Sources */,
 				57A9AEF828268D6200D02E8F /* CryptoWalletApp.swift in Sources */,
 				5739C4C72826C479009895C0 /* TrendingRow.swift in Sources */,

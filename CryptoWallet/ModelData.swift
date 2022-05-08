@@ -21,7 +21,7 @@ struct Profile: Decodable {
   
 }
 
-struct Market: Decodable {
+struct CryptoMarket: Decodable {
   
   let trending: [String]
   let coins: [Coin]
