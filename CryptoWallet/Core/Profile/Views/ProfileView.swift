@@ -9,13 +9,13 @@ import SwiftUI
 
 struct ProfileView: View {
   
-  @EnvironmentObject var modelData: ModelData
+  @EnvironmentObject private var modelData: ModelData
   
   var body: some View {
     ScrollView(showsIndicators: false) {
       VStack {
         ProfileHeaderView()
-        TrendingView(coins: modelData.market.coins)
+        TrendingView(coins: modelData.market.trending)
         NewsView(news: modelData.news)
           .frame(height: 300)
       }

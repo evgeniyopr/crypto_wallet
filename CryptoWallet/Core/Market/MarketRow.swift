@@ -29,9 +29,9 @@ struct MarketRow: View {
             .font(.system(size: 15, weight: .semibold))
             .foregroundColor(Color.theme.heatherGrey)
           Spacer()
-          Text(coin.percentage)
+          Text(coin.percentageString + "%")
             .font(.system(size: 16, weight: .regular))
-            .foregroundColor(Color.theme.greenMana)
+            .foregroundColor(coin.percentage > 0 ? Color.theme.greenMana : Color.theme.red)
         }
       }
       .frame(height: 46)

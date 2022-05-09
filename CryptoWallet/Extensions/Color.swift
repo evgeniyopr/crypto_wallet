@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import UIKit
 
 extension Color {
   
@@ -23,5 +24,12 @@ struct ColorTheme {
   let white = Color("White")
   let strawberryDreams = Color("Strawberry Dreams")
   let watermelonJuice = Color("Watermelon Juice")
+  let red = Color("Red")
+  
+}
+
+extension UIColor {
+  
+  static let latinCharm = UIColor(Color("Latin Charm"))
   
 }

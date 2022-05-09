@@ -10,25 +10,27 @@ import SwiftUI
 struct MarketView: View {
   
   @EnvironmentObject var modelData: ModelData
+  @State var isPresented: Bool = false
   
   var body: some View {
-//    VStack {
-    List {
-      ForEach(modelData.market.coins) { coin in
-        MarketRow(coin: coin)
+      List {
+        ForEach(modelData.market.coins) { coin in
+            MarketRow(coin: coin)
+            .onTapGesture {
+              isPresented = true
+            }
+          
+        }
+        .listRowBackground(Color.theme.corbeau)
       }
-      .listRowBackground(Color.theme.corbeau)
-    }
-    
-    .listStyle(.plain)
-//    .background(Color.theme.corbeau)
-    .background(Color.theme.corbeau.edgesIgnoringSafeArea(.all))
-//    .ignoresSafeArea(., edges: <#T##Edge.Set#>)
-    }
-//    .ignoresSafeArea()
-//    .background(Color.theme.corbeau)
-//  }
-    
+      .listStyle(.plain)
+      .background(Color.theme.corbeau.edgesIgnoringSafeArea(.all))
+      .fullScreenCover(isPresented: $isPresented) {
+        CoinDetailView()
+          .animation(.easeInOut)
+          .transition(.move(edge: .leading))
+      }
+  }
 }
 
 struct MarketView_Previews: PreviewProvider {

@@ -37,11 +37,11 @@ final class OnboardingViewModel: ObservableObject {
     var description: String {
       switch self {
       case .first:
-        return "Supplying the convenient \n transactions chains"
+        return "Supplying the convenient \ntransactions chains"
       case .second:
-        return "Providing crypto audience with \n high-tech security solutions"
+        return "Providing crypto audience with \nhigh-tech security solutions"
       case .third:
-        return "Diversifying crypto investment \n experience worldwide"
+        return "Diversifying crypto investment \nexperience worldwide"
       }
     }
   }
@@ -74,5 +74,4 @@ final class OnboardingViewModel: ObservableObject {
   private func saveOnboardingShown() {
     onboardingRepositoryService.saveOnboardingShown()
   }
-  
 }

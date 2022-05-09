@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ProfileHeaderView: View {
   
-  @EnvironmentObject var modelData: ModelData
+  @EnvironmentObject private var modelData: ModelData
   
   var body: some View {
     VStack{

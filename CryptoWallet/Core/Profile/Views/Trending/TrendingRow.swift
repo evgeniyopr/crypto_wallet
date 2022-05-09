@@ -24,7 +24,7 @@ struct TrendingRow: View {
   
   private var header: some View {
     HStack(spacing: 0) {
-      Image("binance_coin")
+      Image(coin.image)
         .scaledToFit()
         .frame(width: 64, height: 64)
       VStack(alignment: .leading) {
@@ -48,12 +48,12 @@ struct TrendingRow: View {
   
   private var footer: some View {
     HStack {
-      Text("$42024")
+      Text(coin.price)
         .font(.system(size: 14, weight: .semibold))
         .foregroundColor(Color.theme.white)
       Spacer()
       Image("arrow_drop")
-      Text("0.27%")
+      Text(coin.percentageString + "%")
         .font(.system(size: 10, weight: .medium))
         .foregroundColor(Color.red)
     }

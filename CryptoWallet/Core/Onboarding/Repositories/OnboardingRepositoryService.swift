@@ -23,7 +23,7 @@ final class OnboardingRepositoryService: ObservableObject {
   
   // MARK: - Init
   
-  init () {
+  init() {
     onboardingShownBefore = UserDefaults.standard.bool(forKey: Constants.onboardingShownBeforeKey)
   }
   
@@ -33,5 +33,4 @@ final class OnboardingRepositoryService: ObservableObject {
     UserDefaults.standard.set(true, forKey: Constants.onboardingShownBeforeKey)
     onboardingShownBefore = true
   }
-  
 }

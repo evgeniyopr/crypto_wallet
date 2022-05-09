@@ -1,29 +1,38 @@
 {
-  "trending": ["bitcoin", "cardano"],
+  "trending": [
+    {
+      "id": "etherium2",
+      "symbol": "ETH2",
+      "name": "Etherium 2",
+      "price": "$2,383.65",
+      "percentage": -4.91,
+      "image": "etherium2",
+    },
+    {
+      "id": "tether",
+      "symbol": "USDT",
+      "name": "Tether",
+      "price": "$2.00",
+      "percentage": -0.05,
+      "image": "tether",
+    },
+    {
+      "id": "binance_coin",
+      "symbol": "BNB",
+      "name": "Binance Coin",
+      "price": "$352.50",
+      "percentage": -0.27,
+      "image": "binance_coin",
+    }
+  ],
   "coins" :
   [
-    {
-      "id": "bitcoin",
-      "symbol": "btc",
-      "name": "Bitcoin",
-      "price": "352,20",
-      "percentage": "-0.27",
-      "image": "bitcoin",
-    },
-    {
-      "id": "cardano",
-      "symbol": "ada",
-      "name": "Cardano",
-      "price": "$2,836,137.20",
-      "percentage": "4.11%",
-      "image": "cardano",
-    },
     {
       "id": "etherium",
       "symbol": "ETH",
       "name": "Etherium",
       "price": "$2678.95",
-      "percentage": "4.95",
+      "percentage": 4.95,
       "image": "etherium",
     },
     {
@@ -31,8 +40,48 @@
       "symbol": "ETH2",
       "name": "Etherium 2",
       "price": "$2,383.65",
-      "percentage": "4.91",
+      "percentage": -4.91,
       "image": "etherium2",
+    },
+    {
+      "id": "tether",
+      "symbol": "USDT",
+      "name": "Tether",
+      "price": "$2.00",
+      "percentage": -0.05,
+      "image": "tether",
+    },
+    {
+      "id": "binance_coin",
+      "symbol": "BNB",
+      "name": "Binance Coin",
+      "price": "$352.50",
+      "percentage": -0.27,
+      "image": "binance_coin",
+    },
+    {
+      "id": "cardano",
+      "symbol": "ada",
+      "name": "Cardano",
+      "price": "$2,836,137.20",
+      "percentage": 4.11,
+      "image": "cardano",
+    },
+    {
+      "id": "chain_link",
+      "symbol": "LINK",
+      "name": "Chain link",
+      "price": "$2,836,137.20",
+      "percentage": 2.23,
+      "image": "chain_link",
+    },
+    {
+      "id": "bitcoin",
+      "symbol": "BTC",
+      "name": "Bitcoin",
+      "price": "$36,751.20",
+      "percentage": 2.23,
+      "image": "bitcoin",
     }
   ]
 }

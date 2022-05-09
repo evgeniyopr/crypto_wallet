@@ -9,7 +9,7 @@ import SwiftUI
 
 struct OnboardingView: View {
   
-  @EnvironmentObject var viewModel: OnboardingViewModel
+  @EnvironmentObject private var viewModel: OnboardingViewModel
   
   var body: some View {
     GeometryReader(content: { geometry in
@@ -72,12 +72,16 @@ struct OnboardingView: View {
 }
 
 struct OnboardingView_Previews: PreviewProvider {
+  static let viewModel = OnboardingViewModel(onboardingRepositoryService: OnboardingRepositoryService())
+  
   static var previews: some View {
     OnboardingView()
+      .environmentObject(viewModel)
       .previewDevice(PreviewDevice(rawValue: "iPhone 8"))
       .previewDisplayName("iPhone 8")
     
     OnboardingView()
+      .environmentObject(viewModel)
       .previewDevice(PreviewDevice(rawValue: "iPhone 12 Pro Max"))
       .previewDisplayName("iPhone 12 Pro Max")
   }

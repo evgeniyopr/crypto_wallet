@@ -17,9 +17,7 @@ struct ContentView: View {
   }
   
   init() {
-    UITabBar.appearance().barTintColor = UIColor.gray
-    UITabBar.appearance().isTranslucent = false
-    UIToolbar.appearance().backgroundColor = UIColor.gray
+    UITabBar.appearance().barTintColor = UIColor.latinCharm
   }
   
   var body: some View {

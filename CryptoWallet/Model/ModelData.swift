@@ -30,6 +30,9 @@ final class ModelData: ObservableObject {
   // MARK: - Private methods
   
   private func fetchAvatar() {
+    if let image = fetchAvatarFromStore() {
+      self.avatar = Image(uiImage: image)
+    } else {
     imageLoader.downloadImage(with: url)
       .receive(on: DispatchQueue.main)
       .sink { _ in
@@ -39,42 +42,20 @@ final class ModelData: ObservableObject {
               let image = image else { return }
         
         self.avatar = Image(uiImage: image)
+        self.saveImage(image: image)
       }
       .store(in: &cancellables)
+    }
   }
   
-}
-
-struct Profile: Decodable {
+  private func saveImage(image: UIImage) {
+    UserDefaults.standard.set(image.jpegData(compressionQuality: 100), forKey: "avatar")
+  }
   
-  let name: String
-  let balance: String
-  
-}
-
-struct CryptoMarket: Decodable {
-  
-  let trending: [String]
-  let coins: [Coin]
-  
-}
-
-struct Coin: Decodable, Identifiable {
-  
-  let id: String
-  let symbol: String
-  let name: String
-  let price: String
-  let percentage: String
-  let image: String
-}
-
-struct News: Decodable, Identifiable {
-  
-  let id: String
-  let title: String
-  let published: String
-  let preview: String
-  let image: String
-  
+  private func fetchAvatarFromStore() -> UIImage? {
+    if let imageData = UserDefaults.standard.value(forKey: "avatar") as? Data {
+      return UIImage(data: imageData)
+    }
+    return nil
+  }
 }
