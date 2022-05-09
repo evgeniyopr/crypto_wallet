@@ -27,8 +27,6 @@ struct MarketView: View {
       .background(Color.theme.corbeau.edgesIgnoringSafeArea(.all))
       .fullScreenCover(isPresented: $isPresented) {
         CoinDetailView()
-          .animation(.easeInOut)
-          .transition(.move(edge: .leading))
       }
   }
 }
