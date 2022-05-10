@@ -55,7 +55,7 @@ struct CoinDetailView: View {
           Button {
             presentationMode.wrappedValue.dismiss()
           } label: {
-            Image("back")
+            Image(R.image.back.name)
             
           }
           Spacer()
@@ -111,8 +111,8 @@ struct CoinDetailView: View {
   private var about: some View {
     VStack {
       HStack {
-        Image("money")
-        Text("About")
+        Image(R.image.money.name)
+        Text(R.string.localizable.about())
           .font(.system(size: 20, weight: .semibold))
           .foregroundColor(Color.theme.white)
         Spacer()
@@ -132,7 +132,7 @@ struct CoinDetailView: View {
         Button(action: {
           isShowMore = true
         }, label: {
-          Text("Show More +")
+          Text(R.string.localizable.show_more())
             .font(.system(size: 16, weight: .semibold))
             .linearGradientForeground(colors: [Color.theme.strawberryDreams,
                                                Color.theme.watermelonJuice],

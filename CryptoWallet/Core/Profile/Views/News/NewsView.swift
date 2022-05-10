@@ -20,15 +20,15 @@ struct NewsView: View {
   
   private var header: some View {
     HStack {
-      Image("news_coin")
-      Text("News")
+      Image(R.image.news_coin.name)
+      Text(R.string.localizable.news())
         .font(.system(size: 20, weight: .semibold))
         .foregroundColor(Color.theme.white)
       Spacer()
       Button {
         print(#function)
       } label: {
-        Text("Show all")
+        Text(R.string.localizable.show_all())
           .font(.system(size: 16, weight: .semibold))
           .linearGradientForeground(colors: [Color.theme.strawberryDreams,
                                              Color.theme.watermelonJuice],
@@ -36,7 +36,6 @@ struct NewsView: View {
                                     endPoint: .trailing)
       }
     }
-//    .padding(20)
     .padding(.leading, 20)
     .padding(.trailing, 20)
     .padding(.top, 43)

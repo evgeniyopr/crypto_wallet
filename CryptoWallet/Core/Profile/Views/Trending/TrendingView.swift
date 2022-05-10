@@ -20,8 +20,8 @@ struct TrendingView: View {
   
   private var header: some View {
     HStack {
-      Image("fire")
-      Text("Trending")
+      Image(R.image.fire.name)
+      Text(R.string.localizable.trending())
         .font(.system(size: 20, weight: .semibold))
         .foregroundColor(Color.theme.white)
       Spacer()

@@ -1,0 +1,24 @@
+/* 
+  Localizable.strings
+  CryptoWallet
+
+  Created by Yevhenii on 10.05.2022.
+  
+*/
+
+
+"continue" = "Continue";
+"easiness" = "Easiness";
+"security" = "Security";
+"transormation" = "Transormation";
+"subtitle_onboarding_1" = "Supplying the convenient \ntransactions chains";
+"subtitle_onboarding_2" = "Providing crypto audience with \nhigh-tech security solutions";
+"subtitle_onboarding_3" = "Diversifying crypto investment \nexperience worldwide";
+"welcome_back" = "Welcome back,";
+"deposit" = "Deposit";
+"withdraw" = "Withdraw";
+"trending" = "Trending";
+"news" = "News";
+"show_all" = "Show all";
+"show_more" = "Show More +";
+"about" = "About";

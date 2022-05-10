@@ -45,7 +45,6 @@ struct NewsRow_Previews: PreviewProvider {
     static var previews: some View {
       Group {
         NewsRow(news: news[0])
-//        NewsRow(news: news[1])
       }
         .previewLayout(.fixed(width: 300, height: 80))
         .background(Color.theme.corbeau)

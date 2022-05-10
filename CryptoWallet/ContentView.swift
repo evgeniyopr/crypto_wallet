@@ -24,12 +24,12 @@ struct ContentView: View {
     TabView(selection: $selection) {
       ProfileView()
         .tabItem {
-          Image(selection == .profile ? "profile_tab_selected" : "profile_tab_unselected")
+          Image(selection == .profile ? R.image.profile_tab_selected.name : R.image.profile_tab_unselected.name)
         }
         .tag(Tab.profile)
       MarketView()
         .tabItem {
-          Image(selection == .market ? "market_tab_selected" : "market_tab_unselected")
+          Image(selection == .market ? R.image.market_tab_selected.name :  R.image.market_tab_unselected.name)
         }
         .tag(Tab.market)
     }

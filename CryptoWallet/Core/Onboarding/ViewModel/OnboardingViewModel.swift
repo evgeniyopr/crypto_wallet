@@ -15,33 +15,33 @@ final class OnboardingViewModel: ObservableObject {
     var imageName: String {
       switch self {
       case .first:
-        return "onboarding_illus_1"
+        return R.image.onboarding_illus_1.name
       case .second:
-        return "onboarding_illus_2"
+        return R.image.onboarding_illus_2.name
       case .third:
-        return "onboarding_illus_3"
+        return R.image.onboarding_illus_3.name
       }
     }
     
     var title: String {
       switch self {
       case .first:
-        return "Easiness"
+        return R.string.localizable.easiness()
       case .second:
-        return "Security"
+        return R.string.localizable.security()
       case .third:
-        return "Transormation"
+        return R.string.localizable.transormation()
       }
     }
     
     var description: String {
       switch self {
       case .first:
-        return "Supplying the convenient \ntransactions chains"
+        return R.string.localizable.subtitle_onboarding_1()
       case .second:
-        return "Providing crypto audience with \nhigh-tech security solutions"
+        return R.string.localizable.subtitle_onboarding_2()
       case .third:
-        return "Diversifying crypto investment \nexperience worldwide"
+        return R.string.localizable.subtitle_onboarding_3()
       }
     }
   }

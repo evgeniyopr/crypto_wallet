@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		52E1EB565960F613D6236850 /* Pods_CryptoWallet.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7457CEF221642652143049F /* Pods_CryptoWallet.framework */; };
+		57308B9E282A33FA007B6B19 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57308B9D282A33FA007B6B19 /* R.generated.swift */; };
+		57308BA0282A3541007B6B19 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 57308B9F282A3541007B6B19 /* Localizable.strings */; };
 		5739C4B8282692EF009895C0 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5739C4B7282692EF009895C0 /* OnboardingView.swift */; };
 		5739C4BB28269795009895C0 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5739C4BA28269795009895C0 /* Color.swift */; };
 		5739C4BD2826A1ED009895C0 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5739C4BC2826A1ED009895C0 /* OnboardingViewModel.swift */; };
@@ -42,6 +45,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3659CACECD8295367A366A4E /* Pods-CryptoWallet.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoWallet.release.xcconfig"; path = "Target Support Files/Pods-CryptoWallet/Pods-CryptoWallet.release.xcconfig"; sourceTree = "<group>"; };
+		5396772EE81273DED4AB96F4 /* Pods-CryptoWallet.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CryptoWallet.debug.xcconfig"; path = "Target Support Files/Pods-CryptoWallet/Pods-CryptoWallet.debug.xcconfig"; sourceTree = "<group>"; };
+		57308B9D282A33FA007B6B19 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
+		57308B9F282A3541007B6B19 /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		5739C4B7282692EF009895C0 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		5739C4BA28269795009895C0 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		5739C4BC2826A1ED009895C0 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
@@ -55,7 +62,7 @@
 		5739C4D32826D175009895C0 /* news.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = news.json; sourceTree = "<group>"; };
 		5739C4D72826D8F2009895C0 /* profile.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = profile.json; sourceTree = "<group>"; };
 		5739C4DA2826E93F009895C0 /* NewsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsRow.swift; sourceTree = "<group>"; };
-		576C4E87282987FE00A92887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		576C4E87282987FE00A92887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5777B93E2829735B00050C1E /* Shape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shape.swift; sourceTree = "<group>"; };
 		5777B9402829738500050C1E /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
 		5777B9422829779C00050C1E /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
@@ -76,6 +83,7 @@
 		57C421D528283E8D0013117E /* CoinDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDetailView.swift; sourceTree = "<group>"; };
 		57C421D7282849360013117E /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		57C421D928284A590013117E /* CustomMultiLineButtonWithBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomMultiLineButtonWithBorder.swift; sourceTree = "<group>"; };
+		A7457CEF221642652143049F /* Pods_CryptoWallet.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CryptoWallet.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,12 +91,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52E1EB565960F613D6236850 /* Pods_CryptoWallet.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09BD5373FBCBAE12CD2E1AE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7457CEF221642652143049F /* Pods_CryptoWallet.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		11D524296700F4F7CA51C283 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5396772EE81273DED4AB96F4 /* Pods-CryptoWallet.debug.xcconfig */,
+				3659CACECD8295367A366A4E /* Pods-CryptoWallet.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		5739C4B3282692BC009895C0 /* Core */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,10 +202,12 @@
 		5739C4CE2826CE29009895C0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				57308B9D282A33FA007B6B19 /* R.generated.swift */,
 				57A9AEFB28268D6400D02E8F /* Assets.xcassets */,
 				5739C4D32826D175009895C0 /* news.json */,
 				5739C4D72826D8F2009895C0 /* profile.json */,
 				5739C4D12826CF7B009895C0 /* market.json */,
+				57308B9F282A3541007B6B19 /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -189,6 +217,8 @@
 			children = (
 				57A9AEF628268D6200D02E8F /* CryptoWallet */,
 				57A9AEF528268D6200D02E8F /* Products */,
+				11D524296700F4F7CA51C283 /* Pods */,
+				09BD5373FBCBAE12CD2E1AE6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -203,9 +233,9 @@
 		57A9AEF628268D6200D02E8F /* CryptoWallet */ = {
 			isa = PBXGroup;
 			children = (
-				576C4E87282987FE00A92887 /* Info.plist */,
 				57A9AEF728268D6200D02E8F /* CryptoWalletApp.swift */,
 				57A9AEF928268D6200D02E8F /* ContentView.swift */,
+				576C4E87282987FE00A92887 /* Info.plist */,
 				5739C4B3282692BC009895C0 /* Core */,
 				57C421CB282830650013117E /* Components */,
 				5739C4B928269785009895C0 /* Extensions */,
@@ -288,9 +318,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 57A9AF0228268D6400D02E8F /* Build configuration list for PBXNativeTarget "CryptoWallet" */;
 			buildPhases = (
+				E647C299931B3872D0B875C1 /* [CP] Check Pods Manifest.lock */,
+				574C0F52282A331500DB2106 /* R.Swift */,
 				57A9AEF028268D6200D02E8F /* Sources */,
 				57A9AEF128268D6200D02E8F /* Frameworks */,
 				57A9AEF228268D6200D02E8F /* Resources */,
+				CCF7FA869827854AB7CB90B3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -340,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57A9AEFF28268D6400D02E8F /* Preview Assets.xcassets in Resources */,
+				57308BA0282A3541007B6B19 /* Localizable.strings in Resources */,
 				5739C4D92826DE27009895C0 /* news.json in Resources */,
 				5739C4D82826DBE2009895C0 /* profile.json in Resources */,
 				57A9AEFC28268D6400D02E8F /* Assets.xcassets in Resources */,
@@ -348,6 +382,68 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		574C0F52282A331500DB2106 /* R.Swift */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$TEMP_DIR/rswift-lastrun",
+			);
+			name = R.Swift;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/$PROJECT_NAME/Resources/R.generated.swift,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate --generators image,string,color,file,font,nib,storyboard,reuseIdentifier,entitlements,info,id \"$SRCROOT/$PROJECT_NAME/Resources/R.generated.swift\"\n";
+		};
+		CCF7FA869827854AB7CB90B3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CryptoWallet/Pods-CryptoWallet-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CryptoWallet/Pods-CryptoWallet-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CryptoWallet/Pods-CryptoWallet-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E647C299931B3872D0B875C1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CryptoWallet-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		57A9AEF028268D6200D02E8F /* Sources */ = {
@@ -369,6 +465,7 @@
 				57C421C328278BCB0013117E /* MarketView.swift in Sources */,
 				57C421D228283BFE0013117E /* ImageLoader.swift in Sources */,
 				5739C4C32826C113009895C0 /* ProfileHeaderView.swift in Sources */,
+				57308B9E282A33FA007B6B19 /* R.generated.swift in Sources */,
 				5739C4C02826C0D2009895C0 /* ProfileView.swift in Sources */,
 				5777B9432829779C00050C1E /* Profile.swift in Sources */,
 				57C421C528278BD40013117E /* MarketRow.swift in Sources */,
@@ -503,12 +600,14 @@
 		};
 		57A9AF0328268D6400D02E8F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5396772EE81273DED4AB96F4 /* Pods-CryptoWallet.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CryptoWallet/Preview Content\"";
+				DEVELOPMENT_TEAM = 26V6BQBWSY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CryptoWallet/Info.plist;
@@ -533,12 +632,14 @@
 		};
 		57A9AF0428268D6400D02E8F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3659CACECD8295367A366A4E /* Pods-CryptoWallet.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CryptoWallet/Preview Content\"";
+				DEVELOPMENT_TEAM = 26V6BQBWSY;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CryptoWallet/Info.plist;

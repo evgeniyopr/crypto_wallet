@@ -22,7 +22,7 @@ struct ProfileHeaderView: View {
   private var header: some View {
     HStack {
       VStack(alignment: .leading) {
-        Text("Welcome back,")
+        Text(R.string.localizable.welcome_back())
           .font(.system(size: 16, weight: .semibold))
           .foregroundColor(Color.theme.heatherGrey)
         Text(modelData.profile.name + " 👋")
@@ -58,8 +58,8 @@ struct ProfileHeaderView: View {
   
   private var buttons: some View {
     HStack(spacing: 10) {
-      CustomButtonWithBorder(title: "Deposit")
-      CustomButtonWithBorder(title: "Withdraw")
+      CustomButtonWithBorder(title: R.string.localizable.deposit())
+      CustomButtonWithBorder(title: R.string.localizable.withdraw())
     }
     .padding(.top, 32)
     .padding(.trailing, 20)

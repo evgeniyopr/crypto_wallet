@@ -9,25 +9,32 @@ import SwiftUI
 
 struct MarketView: View {
   
-  @EnvironmentObject var modelData: ModelData
-  @State var isPresented: Bool = false
+  @EnvironmentObject private var modelData: ModelData
+  @State private var isPresented: Bool = false
   
   var body: some View {
+    ZStack {
+      Rectangle()
+        .fill(Color.red)
+        .ignoresSafeArea()
       List {
         ForEach(modelData.market.coins) { coin in
             MarketRow(coin: coin)
             .onTapGesture {
               isPresented = true
             }
-          
         }
         .listRowBackground(Color.theme.corbeau)
+        .listStyle(.inset)
       }
-      .listStyle(.plain)
+      .onAppear {
+        UITableView.appearance().backgroundColor = .clear
+      }
       .background(Color.theme.corbeau.edgesIgnoringSafeArea(.all))
       .fullScreenCover(isPresented: $isPresented) {
         CoinDetailView()
       }
+    }
   }
 }
 
@@ -37,7 +44,6 @@ struct MarketView_Previews: PreviewProvider {
   
   static var previews: some View {
     MarketView()
-      .background(Color.theme.corbeau)
       .environmentObject(ModelData())
   }
 }

@@ -42,7 +42,7 @@ struct TrendingRow: View {
   }
   
   private var image: some View {
-    Image("bitcoin_chart")
+    Image(R.image.bitcoin_chart.name)
       .frame(width: 164, height: 37)
   }
   
@@ -52,7 +52,7 @@ struct TrendingRow: View {
         .font(.system(size: 14, weight: .semibold))
         .foregroundColor(Color.theme.white)
       Spacer()
-      Image("arrow_drop")
+      Image(R.image.arrow_drop.name)
       Text(coin.percentageString + "%")
         .font(.system(size: 10, weight: .medium))
         .foregroundColor(Color.red)

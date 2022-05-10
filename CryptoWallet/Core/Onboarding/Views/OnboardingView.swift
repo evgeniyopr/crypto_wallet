@@ -40,7 +40,7 @@ struct OnboardingView: View {
         .cornerRadius(30)
       VStack {
         Spacer()
-        Text(viewModel.currentStep.title )
+        Text(viewModel.currentStep.title)
           .font(.system(size: 32, weight: .semibold))
           .foregroundColor(Color.theme.white)
         Spacer()
@@ -52,7 +52,7 @@ struct OnboardingView: View {
         Button {
           viewModel.didSelectContinue()
         } label: {
-          Text("Continue")
+          Text(R.string.localizable.continue())
             .frame(height: 56)
             .frame(maxWidth: .infinity)
             .background(
