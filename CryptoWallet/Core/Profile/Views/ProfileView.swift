@@ -22,7 +22,7 @@ struct ProfileView: View {
     }
     .padding(.top, 30)
     .background(Color.theme.corbeau)
-    .ignoresSafeArea()
+    .ignoresSafeArea(.container, edges: .top)
   }
 }
 
